@@ -1,0 +1,79 @@
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;  
+  background-color: #EEEEEE;
+  height: 100vh;
+}
+
+.outer {
+  height: 200px;
+  width: 400px;
+  /* flex-grow: 1; */
+  /* background-image: linear-gradient(to left, rgba(25, 25, 25, 0), rgb(114, 71, 255)); */
+  border: 3px solid #000; 
+  display: flex;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+  border-radius: 8px; 
+}
+.call{
+  margin-top: 2px;
+}
+.left {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden; 
+}
+
+.left img {
+  border: 3px solid #000; 
+  height: 128px;
+  width: 128px;
+  object-fit: cover; 
+}
+
+.right {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  font-size: 20px;
+  gap: 10px;
+  justify-content: center;
+  align-items: start;
+  font-family:'Futura Std Condensed'
+}
+
+.name {
+  display: flex;
+  gap: 5px;
+  font-weight: bold; 
+}
+
+.gender, .phone {
+  font-weight: normal; 
+  display: flex;
+}
+
+
+@media (max-width: 426px) {
+  .outer{
+    width: 280px;
+    height: 150px;
+  }
+  .right {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    font-size: 14px;
+    gap: 10px;
+  }
+  .left img {
+    border: 3px solid #000; 
+    height: 75px;
+    width: 75px;
+    object-fit: cover; 
+  }
+}
